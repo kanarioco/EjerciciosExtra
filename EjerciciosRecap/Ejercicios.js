@@ -97,8 +97,6 @@ a.	convertir	array1	en	un	solo	array
 b.	convertir	array2	en	un	array	con	los	4	primeros	elementos	del	
 array	y	un	subarray	anidado	del	último	[5,6]	
 c.	convertir	array3	en	un	solo	array	
-10.	Ordena	alfabéticamente	el	siguiente	array	(en	orden	descendente)	
-según	el	estándar	UNICODE	e	imprime	el	resultado	en	la	consola.
 */
 
 let	array1	=	[1,	2,	[3,	4]];
@@ -108,3 +106,21 @@ console.log( array1.flat());
 console.log( array2.flat());
 console.log( array2.flat().flat());
 console.log( array1.concat(array1[2]));
+
+/*
+10.	Ordena	alfabéticamente	el	siguiente	array	(en	orden	descendente)	
+según	el	estándar	UNICODE	e	imprime	el	resultado	en	la	consola.
+let	colores	=	["azul",	"verde",	"rosa",	"naranja",	"rojo",	
+"marron"];
+*/
+
+let	colores2 = ["azul",	"verde", "rosa", "naranja",	"rojo",	"marron"];
+
+console.log(colores2.sort()); 
+
+function ordenado() {
+    colores2.sort();
+    console.log(colores2.reverse());
+}
+ordenado()
+
